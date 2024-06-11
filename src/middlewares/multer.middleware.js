@@ -8,7 +8,7 @@ const storage = multer.diskStorage({
         //   const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9) right now we dont need a unique suffix
         //   cb(null, file.fieldname + '-' + uniqueSuffix)
         cb(null, file.originalname)
-        // usually we shouldn'tuse it bcz we can have multiple files with the same name. But we're only keeping the file on local storage for a very small time so we won't have a problem
+        // usually we shouldn't use it bcz we can have multiple files with the same name. But we're only keeping the file on local storage for a very small time so we won't have a problem
     }
     // from the callback we will get the filepath
 })
